@@ -1,11 +1,20 @@
-function isPwd(pwd,newpwd){
-	if(pwd==newpwd){
+function isPwd(){
+	var str1=$("#upwd").val();
+	var str2 = $("#newPwd").val();
+	if(str1.eq(str2)){
+		alert("两者相等");
 		return true;
 	}else{
 		return false;
 	}
 } 
-
+function rule() {
+	if($("#rule").is('checked')){
+		return true;
+	}else {
+		return false;
+	}
+}
 function isChinaName(name) {
 	 var pattern = /^[\u4E00-\u9FA5]{1,6}$/;
 	 return pattern.test(name);
@@ -13,7 +22,7 @@ function isChinaName(name) {
 	 
 	// 验证手机号
 	function isPhoneNo(phone) { 
-	 var pattern = /^1[3,5,8]\d{9}$/; 
+	 var pattern = /^1[3|5|7|8]\d{9}$/g;
 	 return pattern.test(phone); 
 	}
 	 
@@ -24,8 +33,10 @@ function isChinaName(name) {
 	} 
 	 
  function check(){
-	 
-	 if(isPwd($('#newPwd').val(),$('#pwd').val())==false){
+	 if(rule()==false){
+	 	alert("请查看是否同意条款");
+	 }
+	 if(isPwd()==false){
 		 $('#pwdMes').text("密码两次输入不一致");
 	 }
 	 if(isChinaName($.trim($('#uname').val())) == false){
@@ -37,7 +48,7 @@ function isChinaName(name) {
 	 if(isCardNo($.trim($('#ucard').val())) == false) {
 		 $('#ucardMes').text("身份证输入错误");
 	 }
-	 if(isPwd($('#newPwd').val(),$('#pwd').val())&&isChinaName($.trim($('#uname').val()))
+	 if(rule()&&isPwd()&&isChinaName($.trim($('#uname').val()))
 			 &&isPhoneNo($.trim($('#uphones').val()))&&isCardNo($.trim($('#ucard').val()))){
 		 return true;
 	 }else{

@@ -31,16 +31,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div class="a3">
 		<div class="a4">
 			<ul>
-				<li><a href="HomeServlet">首页</a></li>
-					<li><img src="img/t1.jpg"></li>
-					<li><a href="InsideServlet">境外游</a></li>
-					<li><img src="img/t1.jpg"></li>
-					<li><a href="">境内游</a></li>
-					<li><img src="img/t1.jpg"></li>
-					<li><a href="">热门游</a></li>
-					<li><img src="img/t1.jpg"></li>
-					<li><a href="GrouponServlet">团购</a></li>
-					<li><a href="che.jsp"><img alt="" src="img/che.jpg"></a></li>
+				<li><a href="HomeAction.action">首页</a></li>
+				<li><img src="img/t1.jpg"></li>
+				<li><a href="InsideAction.action">境外游</a></li>
+				<li><img src="img/t1.jpg"></li>
+				<li><a href="">境内游</a></li>
+				<li><img src="img/t1.jpg"></li>
+				<li><a href="">热门游</a></li>
+				<li><img src="img/t1.jpg"></li>
+				<li><a href="GrouponAction.action">团购</a></li>
+				<li><a href="CartAction.action"><img alt="" src="img/che.jpg"></a></li>
 			</ul>
 		</div>
 	</div>
@@ -49,70 +49,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div>
 			<form action="">
 				<table>
-					<!-- <tr>
-						<td><img alt="" src="img/tg01.jpg"> <br>
-							<p>全国联保德国2日</p>
-							<p>简介：德国是一个中欧联邦制会议国家
-							<p>
-								<font color="red" size="3">团购价￥8888</font><font color="grey"
-									size="1">原价12348</font>
-							</p>
-							<p>
-								<font color="grey" size="1">已有两人参与</font>
-							</p></td>
-						<td><img alt="" src="img/tg02.jpg"> <br>
-							<p>全国联保德国2日</p>
-							<p>简介：德国是一个中欧联邦制会议国家
-							<p>
-								<font color="red" size="3">团购价￥8888</font><font color="grey"
-									size="1">原价12348</font>
-							</p>
-							<p>
-								<font color="grey" size="1">已有两人参与</font>
-							</p></td>
-						<td><img alt="" src="img/tg03.jpg"> <br>
-							<p>全国联保德国2日</p>
-							<p>简介：德国是一个中欧联邦制会议国家
-							<p>
-								<font color="red" size="3">团购价￥8888</font><font color="grey"
-									size="1">原价12348</font>
-							</p>
-							<p>
-								<font color="grey" size="1">已有两人参与</font>
-							</p></td>
-					</tr>
-					<tr>
-						<td><img alt="" src="img/tg04.jpg"> <br>
-							<p>全国联保德国2日</p>
-							<p>简介：德国是一个中欧联邦制会议国家
-							<p>
-								<font color="red" size="3">团购价￥8888</font><font color="grey"
-									size="1">原价12348</font>
-							</p>
-							<p>
-								<font color="grey" size="1">已有两人参与</font>
-							</p></td>
-						<td><img alt="" src="img/tg05.jpg"> <br>
-							<p>全国联保德国2日</p>
-							<p>简介：德国是一个中欧联邦制会议国家
-							<p>
-								<font color="red" size="3">团购价￥8888</font><font color="grey"
-									size="1">原价12348</font>
-							</p>
-							<p>
-								<font color="grey" size="1">已有两人参与</font>
-							</p></td>
-						<td><img alt="" src="img/tg06.jpg"> <br>
-							<p>全国联保德国2日</p>
-							<p>简介：德国是一个中欧联邦制会议国家
-							<p>
-								<font color="red" size="3">团购价￥8888</font><font color="grey"
-									size="1">原价12348</font>
-							</p>
-							<p>
-								<font color="grey" size="1">已有两人参与</font>
-							</p></td>
-					</tr> -->
 					<tr>
 						<c:forEach var="tuan" items="${list}" begin="0" end="2">
 						<td><img alt="" src="${tuan.gphoto }"> <br>

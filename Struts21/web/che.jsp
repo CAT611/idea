@@ -108,16 +108,16 @@ tr {
 	<div class="a3">
 		<div class="a4">
 			<ul>
-				<li><a href="HomeServlet">首页</a></li>
-					<li><img src="img/t1.jpg"></li>
-					<li><a href="InsideServlet">境外游</a></li>
-					<li><img src="img/t1.jpg"></li>
-					<li><a href="">境内游</a></li>
-					<li><img src="img/t1.jpg"></li>
-					<li><a href="">热门游</a></li>
-					<li><img src="img/t1.jpg"></li>
-					<li><a href="GrouponServlet">团购</a></li>
-					<li><a href="che.jsp"><img alt="" src="img/che.jpg"></a></li>
+				<li><a href="HomeAction.action">首页</a></li>
+				<li><img src="img/t1.jpg"></li>
+				<li><a href="InsideAction.action">境外游</a></li>
+				<li><img src="img/t1.jpg"></li>
+				<li><a href="">境内游</a></li>
+				<li><img src="img/t1.jpg"></li>
+				<li><a href="">热门游</a></li>
+				<li><img src="img/t1.jpg"></li>
+				<li><a href="GrouponAction.action">团购</a></li>
+				<li><a href="CartAction.action"><img alt="" src="img/che.jpg"></a></li>
 			</ul>
 		</div>
 	</div>
