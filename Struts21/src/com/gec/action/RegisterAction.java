@@ -8,16 +8,6 @@ import com.opensymphony.xwork2.ModelDriven;
 
 public class RegisterAction extends ActionSupport implements ModelDriven<Users> {
 
-
-    public String getRule() {
-        return rule;
-    }
-
-    public void setRule(String rule) {
-        this.rule = rule;
-    }
-
-    private String rule ;
     public Users user;
 
     public Users getUser() {
@@ -31,7 +21,7 @@ public class RegisterAction extends ActionSupport implements ModelDriven<Users> 
     public String Register(){
         Login register=new LoginImpl();
         boolean flag=register.register(user);
-        if(flag&&rule!=null){
+        if(flag){
             return "success";
         }else {
             return "error";

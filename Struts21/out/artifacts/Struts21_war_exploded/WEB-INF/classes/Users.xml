@@ -22,7 +22,7 @@
         <!--注册action -->
         <action name="RegisterAction" method="Register" class="com.gec.action.RegisterAction">
             <!-- 配置Result -->
-            <result type="dispatcher" name="login">/login.jsp</result>
+            <result type="dispatcher" name="success">/login.jsp</result>
             <result type="dispatcher" name="error">/register.jsp</result>
         </action>
         <!--首页action -->
