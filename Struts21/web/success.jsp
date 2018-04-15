@@ -23,6 +23,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  <h1>欢迎您购买成功，一共花费${sum}钱</h1>
+  <h1>欢迎您购买成功，一共花费${sum}钱！</h1>
   </body>
 </html>
