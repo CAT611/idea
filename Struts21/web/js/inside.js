@@ -1,0 +1,47 @@
+$(function(){
+		$(".mov1").mouseover(function(){
+			$(".img1").attr({"src":"img/jn1.jpg","z-index":10});
+			$(".mov1").css("background-color","blue");
+			$("#img1").attr("href","%%%");
+		});
+		$(".mov2").mouseover(function(){
+			$(".img1").attr("src","img/jn2.jpg");
+			$(".mov2").css("background-color","blue");
+			$("#img1").attr("href","%%%");
+		});
+		$(".mov3").mouseover(function(){
+			$(".img1").attr("src","img/jn3.jpg");
+			$(".mov3").css("background-color","blue");
+		});
+		$(".mov4").mouseover(function(){
+			$(".img1").attr("src","img/jn4.jpg");
+			$(".mov4").css("background-color","blue");
+		});
+		$(".mov5").mouseover(function(){
+			$(".img1").attr("src","img/jn5.jpg");
+			$(".mov5").css("background-color","blue");
+		});
+		$(".mov6").mouseover(function(){
+			$(".img1").attr("src","img/jn6.jpg");
+			$(".mov6").css("background-color","blue");
+		});
+		$(".mov7").mouseover(function(){
+			$(".img1").attr("src","img/jn7.jpg");
+			$(".mov7").css("background-color","blue");
+		});
+		$(".mov8").mouseover(function(){
+			$(".img1").attr("src","img/jn8.jpg");
+			$(".mov8").css("background-color","blue");
+		});
+		$(".mov9").mouseover(function(){
+			$(".img1").attr("src","img/jn9.jpg");
+			$(".mov9").css("background-color","blue");
+		});
+		$(".mov10").mouseover(function(){
+			$(".img1").attr("src","img/jn10.jpg");
+			$(".mov10").css("background-color","blue");
+		});
+		$(".a7 td").mouseout(function(){
+			$(".a7 td").css("background-color","black");
+		});
+	});

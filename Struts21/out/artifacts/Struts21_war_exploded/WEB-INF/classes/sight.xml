@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+    <constant name="struts.devMode" value="true"/>
+    <!-- package元素用于包配置 -->
+    <package name="com.gec.action" namespace="/" extends="struts-default">
+        <!-- 配置Action -->
+
+        <!--首页action -->
+        <action name="HomeAction" method="home" class="com.gec.action.HomeAction">
+            <!-- 配置Result -->
+            <result type="dispatcher" name="home">/home.jsp</result>
+            <result type="dispatcher" name="error">/error.jsp</result>
+        </action>
+
+        <!--旅游景点详情action -->
+        <action name="DetailsAction" method="details" class="com.gec.action.DetailsAction">
+            <!-- 配置Result -->
+            <result type="dispatcher" name="details">/details.jsp</result>
+            <result type="dispatcher" name="error">/error.jsp</result>
+        </action>
+
+        <!--购物车分页详情action -->
+        <action name="CartAction" method="cart" class="com.gec.action.CartAction">
+            <!-- 配置Result -->
+            <result type="dispatcher" name="che">/che.jsp</result>
+            <result type="dispatcher" name="order">/order.jsp</result>
+        </action>
+
+
+    </package>
+</struts>
