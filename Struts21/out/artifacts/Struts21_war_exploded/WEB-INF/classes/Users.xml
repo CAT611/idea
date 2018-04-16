@@ -9,13 +9,15 @@
     <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
     <constant name="struts.devMode" value="true"/>
     <!-- package元素用于包配置 -->
-    <package name="com.gec.action" namespace="/" extends="struts-default">
+    <package name="Action" namespace="/" extends="struts-default">
         <!-- 配置Action -->
 
         <!--登陆action -->
-        <action name="LoginAction" method="login" class="com.gec.action.LoginAction">
+        <action name="LoginAction" method="login" class="com.gec.action.LoginAction" >
             <!-- 配置Result -->
-            <result type="chain" name="login">HomeAction</result>
+            <result type="chain" name="login" >HomeAction</result>
+
+
             <result type="dispatcher" name="error">/login.jsp</result>
         </action>
 
@@ -75,5 +77,6 @@
             <result type="dispatcher" name="success">/inside.jsp</result>
             <result type="dispatcher" name="error">/error.jsp</result>
         </action>
+
     </package>
 </struts>

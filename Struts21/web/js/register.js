@@ -9,7 +9,7 @@ function isPwd(){
 	}
 } 
 function rule() {
-	if($("#rule").is('checked')){
+	if($("#rule").attr("checked")){
 		return true;
 	}else {
 		return false;

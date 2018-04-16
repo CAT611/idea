@@ -53,7 +53,7 @@ public class DetailsAction extends ActionSupport {
         Group gp=new GroupImpl();
         HttpServletRequest request = ServletActionContext.getRequest();
         try {
-            sname = new String(request.getParameter("sname").getBytes("iso-8859-1"), "UTF-8");
+            sname = new String((sname).getBytes("iso-8859-1"), "UTF-8");
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
